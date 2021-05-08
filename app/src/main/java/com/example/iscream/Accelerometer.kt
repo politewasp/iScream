@@ -1,13 +1,14 @@
 package com.example.iscream
 
-import android.content.Context
-import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
+import android.media.MediaPlayer
 import kotlin.math.sqrt
 
-class Accelerometer : SensorEventListener {
+class Accelerometer (mediaPlayer : MediaPlayer) : SensorEventListener {
+    var audio : MediaPlayer? = mediaPlayer
+
     // never used
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
         // pass
@@ -26,7 +27,8 @@ class Accelerometer : SensorEventListener {
 
         // if total force is close to zero, phone is in free fall
         if(at < 1 && at > -1){
-            println("IM FALLING")
+            println("aaaaaaaaaaaaaaaaaa")
+            audio?.start()
         }
     }
 
