@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">iScream</string>
+    <string name="margaret">Margaret</string>
+    <string name="toggle">Switch</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="scream">scream</string>
+    <string name="don_t_scream">do not scream</string>
 </resources>
