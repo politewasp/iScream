@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // add audio to media player
-        val mediaPlayer = MediaPlayer.create(this, R.raw.beep)
+        val mediaPlayer = MediaPlayer.create(this, R.raw.paris_screaming)
 
         // create sensor of the type accelerometer and instantiate a listener for the sensor
         val sensorManager : SensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
